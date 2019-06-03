@@ -44,17 +44,14 @@
 
       <div class="container">
         <div class="row align-items-center">
-          
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">CKALAMA</a></h1>
+          <div class="col-6 col-xl-3">
+              <img src="{{ asset('template2/images/logockalamaweb.png') }}" alt="Image" class="img-fluid">
+            <!-- <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">CKALAMA</a></h1> -->
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li class="active">
-                  <a href="index.html">Inicio&nbsp&nbsp&nbsp</a>
-                </li>
                 <li>
                   <a href="destination.html">Hoteles&nbsp&nbsp&nbsp</a>
                 </li>
@@ -68,7 +65,7 @@
             </nav>
           </div>
 
-          <div class="col-6 col-xl-2 text-right">
+          <div class="col-6 col-xl-1 text-right">
             <div class="d-none d-xl-inline-block">
               <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
 
@@ -138,7 +135,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/rutaAs2.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/rutaAs3.jpg') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Historica</h3>
               </div>
@@ -146,7 +143,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/rutaGastro.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/filete-quinoa-1030x601.jpg') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Gastronomica</h3>
               </div>
@@ -154,7 +151,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/img_3.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/rutaHisto3.jpg') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Ancestral</h3>
               </div>

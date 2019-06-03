@@ -44,4 +44,10 @@ return [
         ],
     ],
 
+    'facebook' => [
+        'client_id' => '1082434238614513',
+        'client_secret' => 'ed311ca25f4bcf306ed7e71b2ba89128',
+        'redirect' => 'calamap.dev/callback',
+    ],
+
 ];

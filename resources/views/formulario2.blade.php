@@ -55,7 +55,7 @@
               <div class="row form-group">
                 <div class="col-md-6">
                   <label class="text-black" for="treatment">Fecha de nacimiento</label> 
-                  <input type="text" id="email" class="form-control datepicker px-2" placeholder="Email">
+                  <input type="text" id="email" class="form-control datepicker px-2" placeholder="DD/MM/AAAA">
                 </div>
                 <div class="col-md-6">
                   <label class="text-black" for="genero">Género</label></br>
