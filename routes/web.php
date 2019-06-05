@@ -32,7 +32,9 @@ Route::get('formulario2', function () {
     return view('formulario2');
 });
 
-
+Route::get('inscripcionMype', function () {
+    return view('inscripcionMype');
+});
 
 Auth::routes();
 
