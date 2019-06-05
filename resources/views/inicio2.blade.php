@@ -200,8 +200,8 @@
     <div class="container ">
       <div class="row justify-content-center mb-5">
         <div class="col-md-7 text-center">
-          <h2 class="font-weight-light text-black">Sitios de Ckalama</h2>
-          <p class="color-black-opacity-5">Conoce los mejores lugares turisticos de calama &amp; sus alrededores</p>
+          <h2 class="font-weight-light text-black">Eventos en CKALAMA</h2>
+          <p class="color-black-opacity-5">Conoce los eventos turisticos de la ciudad y sus alrededores</p>
         </div>
       </div>
 
@@ -210,25 +210,25 @@
             <div class="row mb-3 align-items-stretch">
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
-                  <img src="{{ asset('template2/images/hero_bg_1.jpg') }}" alt="Image" class="img-fluid">
-                  <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-                  <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                  <img src="{{ asset('template2/images/ayquina.jpg') }}" alt="Image" class="img-fluid">
+                  <h2 class="font-size-regular"><a href="#">Fiesta de Ayquina</a></h2>
+                  <div class="meta mb-4">Por Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">Eventos</a></div>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
                 </div> 
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
-                  <img src="{{ asset('template2/images/hero_bg_1.jpg') }}" alt="Image" class="img-fluid">
-                  <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-                  <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                  <img src="{{ asset('template2/images/feria.jpg') }}" alt="Image" class="img-fluid">
+                  <h2 class="font-size-regular"><a href="#">Feria de artesanos</a></h2>
+                  <div class="meta mb-4">Por Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
                 </div> 
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
-                  <img src="{{ asset('template2/images/hero_bg_2.jpg') }}" alt="Image" class="img-fluid">
-                  <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-                  <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                  <img src="{{ asset('template2/images/taller.jpg') }}" alt="Image" class="img-fluid">
+                  <h2 class="font-size-regular"><a href="#">Talleres de tejido</a></h2>
+                  <div class="meta mb-4">Por Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
                 </div>
               </div>
@@ -274,34 +274,34 @@
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center">
             <h2 class="font-weight-light text-black">Visita nuestros sitios turisticos</h2>
-            <p class="color-black-opacity-5">Choose Your Next Destination</p>
+            <p class="color-black-opacity-5">Descubre los lugares turisticos de la ciudad</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/01-greece.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/cascada.jpg') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
-                <strong class="mb-2 d-block">$590</strong>
-                <h3 class="unit-1-heading">Santorini, Greece</h3>
+                <strong class="text-primary mb-2 d-block">Ver más</strong>
+                <h3 class="unit-1-heading">Sector de la Cascada</h3>
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/02-rome.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/parqueeolico.jpg') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
-                <strong class="text-primary mb-2 d-block">$390</strong>
-                <h3 class="unit-1-heading">Rome, Italy</h3>
+                <strong class="text-primary mb-2 d-block">Ver más</strong>
+                <h3 class="unit-1-heading">Parque Eolico</h3>
               </div>
             </a>
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/03-japan.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/parqueelloa.jpg') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
-                <strong class="text-primary mb-2 d-block">$390</strong>
-                <h3 class="unit-1-heading">Mount Fuji, Japan</h3>
+                <strong class="text-primary mb-2 d-block">Ver más</strong>
+                <h3 class="unit-1-heading">Parque el Loa</h3>
               </div>
             </a>
           </div>
