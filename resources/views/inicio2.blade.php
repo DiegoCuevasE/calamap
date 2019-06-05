@@ -122,7 +122,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/rutaAs3.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/rutaAstro.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Historica</h3>
               </div>
@@ -130,7 +130,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/filete-quinoa-1030x601.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/rutaGastro.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Gastronomica</h3>
               </div>
@@ -138,7 +138,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/rutaHisto3.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/rutaHisto.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Ancestral</h3>
               </div>
@@ -238,25 +238,25 @@
             <div class="row mb-3 align-items-stretch">
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
-                  <img src="{{ asset('template2/images/hero_bg_1.jpg') }}" alt="Image" class="img-fluid">
-                  <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-                  <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                  <img src="{{ asset('template2/images/ayquina.jpg') }}" alt="Image" class="img-fluid">
+                  <h2 class="font-size-regular"><a href="#">Fiesta de Ayquina</a></h2>
+                  <div class="meta mb-4">Por Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">Eventos</a></div>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
                 </div> 
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
-                  <img src="{{ asset('template2/images/hero_bg_1.jpg') }}" alt="Image" class="img-fluid">
-                  <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-                  <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                  <img src="{{ asset('template2/images/feria.jpg') }}" alt="Image" class="img-fluid">
+                  <h2 class="font-size-regular"><a href="#">Feria de artesanos</a></h2>
+                  <div class="meta mb-4">Por Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
                 </div> 
               </div>
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
-                  <img src="{{ asset('template2/images/hero_bg_2.jpg') }}" alt="Image" class="img-fluid">
-                  <h2 class="font-size-regular"><a href="#">How to Plan Your Vacation</a></h2>
-                  <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                  <img src="{{ asset('template2/images/taller.jpg') }}" alt="Image" class="img-fluid">
+                  <h2 class="font-size-regular"><a href="#">Talleres de tejido</a></h2>
+                  <div class="meta mb-4">Por Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
                 </div>
               </div>
@@ -280,7 +280,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/cascada.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/cascada.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">Ver más</strong>
                 <h3 class="unit-1-heading">Sector de la Cascada</h3>
@@ -289,7 +289,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/parqueeolico.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/parqueeolico.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">Ver más</strong>
                 <h3 class="unit-1-heading">Parque Eolico</h3>
@@ -298,7 +298,7 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/parqueelloa.jpg') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/parqueelloa.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <strong class="text-primary mb-2 d-block">Ver más</strong>
                 <h3 class="unit-1-heading">Parque el Loa</h3>
@@ -375,7 +375,7 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">About Travelers</h3>
+              <h3 class="footer-heading mb-4">Sobre CKALAMA</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
             </div>
 
@@ -441,11 +441,10 @@
 
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Elaborada por <i class="icon-heart-o" aria-hidden="true"></i> por <a target="_blank" >Artic</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
-          
         </div>
       </div>
     </footer>
