@@ -137,11 +137,11 @@ h1, h2, h3, h4, h5,
   border-top: 1px solid #edf0f5 !important; }
 
 .site-footer {
-  padding: 4em 0;
+  padding: 2em 0;
   background: #333333; }
   @media (min-width: 768px) {
     .site-footer {
-      padding: 8em 0; } }
+      padding: 3em 0; } }
   .site-footer p {
     color: #737373; }
   .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
@@ -1136,10 +1136,13 @@ h1, h2, h3, h4, h5,
     transform: scale(1.05); }
 
 .overlap-section {
-  margin-top: -150px;
+  margin-top: -300px;
   position: relative;
   z-index: 9; }
-
+.subirImg {
+    margin-top: -300px;
+    position: relative;
+    z-index: 9; }
 .unit-4 .unit-4-icon span {
   line-height: 0;
   font-size: 3rem; }

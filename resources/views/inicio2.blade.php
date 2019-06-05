@@ -96,7 +96,7 @@
    
 
     <div class="slide-one-item home-slider owl-carousel">    
-      <div class="site-blocks-cover overlay" style="background-image: url({{ asset('template2/images/intro1.png') }});" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover " style="background-image: url({{ asset('template2/images/fondo1.jpg') }});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
@@ -105,7 +105,7 @@
           </div>
         </div>
       </div>  
-      <div class="site-blocks-cover overlay" style="background-image: url({{ asset('template2/images/intro2.jpg') }});" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover overlay" style="background-image: url({{ asset('template2/images/fondo2.jpg') }});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
@@ -114,13 +114,22 @@
           </div>
         </div>
       </div>  
+      <div class="site-blocks-cover overlay" style="background-image: url({{ asset('template2/images/fondo3.jpg') }});" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+              <h1 class="text-white font-weight-light">Disfruta de la ciudad</h1>              
+            </div>
+          </div>
+        </div>
+      </div> 
     </div>
 
 
     <div class="site-section">      
-      <div class="container overlap-section">
+      <div class="container subirImg">
         <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
               <img src="{{ asset('template2/images/rutaAstro.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
@@ -128,7 +137,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
               <img src="{{ asset('template2/images/rutaGastro.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
@@ -136,11 +145,19 @@
               </div>
             </a>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
               <img src="{{ asset('template2/images/rutaHisto.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Ancestral</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <a href="#" class="unit-1 text-center">
+              <img src="{{ asset('template2/images/rutaHisto.png') }}" alt="Image" class="img-fluid">
+              <div class="unit-1-text">
+                <h3 class="unit-1-heading">Ruta Oasis</h3>
               </div>
             </a>
           </div>
@@ -315,12 +332,12 @@
     </div> -->
 
 
-    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url({{ asset('template2/images/intro1.png')}}); background-attachment: fixed;">
+    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url({{ asset('template2/images/fondo3.jpg')}}); background-attachment: fixed;">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
-            <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
+            <a href="https://www.youtube.com/watch?v=MlwylhP5MsY" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
             <h2 class="text-white font-weight-light mb-5 h1">Vive Calama</h2>
             
           </div>
@@ -332,38 +349,28 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center">
-            <h2 class="font-weight-light text-black">Our Services</h2>
-            <p class="color-black-opacity-5">We Offer The Following Services</p>
+            <h2 class="font-weight-light text-black">¿Quieres ser parte de nosotros?</h2>
+            <p class="color-black-opacity-5">Registrate segun tu perfil</p>
           </div>
         </div>
         <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
+          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+            <div class="unit-4 d-flex"> 
               <div class="unit-4-icon mr-4"><span class="text-primary flaticon-airplane"></span></div>
               <div>
-                <h3>Air Ticketing</h3>
+                <h3>Registrate como turista</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
+                <p><a href="#">Registrarse</a></p>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
             <div class="unit-4 d-flex">
               <div class="unit-4-icon mr-4"><span class="text-primary flaticon-ship"></span></div>
               <div>
-                <h3>Cruises</h3>
+                <h3>Registrate como MyPE</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-route"></span></div>
-              <div>
-                <h3>Tour Packages</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
+                <p><a href="#">Registrarse</a></p>
               </div>
             </div>
           </div>
@@ -377,10 +384,7 @@
             <div class="mb-5">
               <h3 class="footer-heading mb-4">Sobre CKALAMA</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
-            </div>
-
-            
-            
+            </div>      
           </div>
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="row mb-5">
@@ -404,14 +408,8 @@
                 </ul>
               </div>
             </div>
-
-            
-
           </div>
-
           <div class="col-lg-4 mb-5 mb-lg-0">
-           
-
             <div class="mb-5">
               <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
@@ -424,13 +422,11 @@
                   </div>
                 </div>
               </form>
-
             </div>
-
           </div>
           
         </div>
-        <div class="row pt-5 mt-5 text-center">
+        <div class="row text-center">
           <div class="col-md-12">
             <div class="mb-5">
               <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
