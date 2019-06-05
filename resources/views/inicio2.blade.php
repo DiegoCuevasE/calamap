@@ -99,10 +99,8 @@
       <div class="site-blocks-cover overlay" style="background-image: url({{ asset('template2/images/intro1.png') }});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
-
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h3 class="text-white font-weight-light">Bienvenido a CKALAMA</h3>
-              <p class="mb-5">Desde tiempos ancestrales, Calama ha sido un lugar de transito, descanso y activo comercio entre el Altiplano y la costa. Acá se reunen personas provenientes de todo el país, gente de países vecinos y la comunidad Atacameña local, dando vida así, a un verdadera capital multicultural.</p>             
+              <h1 class="text-white font-weight-light">Bienvenido a CKALAMA</h1>
             </div>
           </div>
         </div>
@@ -111,9 +109,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h2 class="text-white font-weight-light">Disfruta de la ciudad</h2>
-              <p class="mb-5"></p>
-              
+              <h1 class="text-white font-weight-light">Disfruta de la ciudad</h1>              
             </div>
           </div>
         </div>
