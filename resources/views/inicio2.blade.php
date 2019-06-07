@@ -7,25 +7,18 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
     <link rel="stylesheet" href="{{ asset('template2/fonts/icomoon/style.css') }}">
-
-
     <link rel="stylesheet" href="{{ asset('template2/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('template2/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('template2/css/jquery-ui.css') }}">
     <link rel="stylesheet" href="{{ asset('template2/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('template2/css/owl.theme.default.min.css') }}">
-
     <link rel="stylesheet" href="{{ asset('template2/css/bootstrap-datepicker.css') }}">
-
     <link rel="stylesheet" href="{{ asset('template2/fonts/flaticon/font2/flaticon.css') }}">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
     <link rel="stylesheet" href="{{ asset('template2/css/aos.css') }}">
-
     <link rel="stylesheet" href="{{ asset('template2/css/style.css') }}">
-    
+
   </head>
   <body>
   
@@ -50,11 +43,9 @@
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
-
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li>
-                  <a href="#">¿Donde Dormir?&nbsp&nbsp&nbsp</a>
-                </li>
+                
+                <li><a href="#">¿Donde Dormir?&nbsp&nbsp&nbsp</a></li>
                 <li><a href="#">¿Que hacer?&nbsp&nbsp&nbsp</a></li>
                 <li><a href="#">¿Donde Comer?&nbsp&nbsp&nbsp</a></li>
                 <li><a href="#">¿Donde ir?&nbsp&nbsp&nbsp</a></li>
@@ -67,16 +58,13 @@
 
           <div class="col-6 col-xl-1 text-right">
             <div class="d-none d-xl-inline-block">
-              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" >
 
                 <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-twitter"></span></a>
+                  <a href="#" class="pl-3 pr-3 text-black">Iniciar sesión</a>
                 </li>
                 <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
+                  <a href="#" class="pl-3 pr-3 text-black">Registrarse</a>
                 </li>
                 
               </ul>
@@ -96,7 +84,7 @@
    
 
     <div class="slide-one-item home-slider owl-carousel">    
-      <div class="site-blocks-cover " style="background-image: url({{ asset('template2/images/fondo1.jpg') }});" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover overlay" style="background-image: url({{ asset('template2/images/fondo1.jpg') }});" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
@@ -114,15 +102,6 @@
           </div>
         </div>
       </div>  
-      <div class="site-blocks-cover overlay" style="background-image: url({{ asset('template2/images/fondo3.jpg') }});" data-aos="fade" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center justify-content-center text-center">
-            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h1 class="text-white font-weight-light">Disfruta de la ciudad</h1>              
-            </div>
-          </div>
-        </div>
-      </div> 
     </div>
 
 
@@ -131,7 +110,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/rutaAstro.png') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/rutaHis.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Historica</h3>
               </div>
@@ -147,7 +126,7 @@
           </div>
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/rutaHisto.png') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/rutaAnc.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Ancestral</h3>
               </div>
@@ -155,7 +134,7 @@
           </div>
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <a href="#" class="unit-1 text-center">
-              <img src="{{ asset('template2/images/rutaHisto.png') }}" alt="Image" class="img-fluid">
+              <img src="{{ asset('template2/images/rutaOasis.png') }}" alt="Image" class="img-fluid">
               <div class="unit-1-text">
                 <h3 class="unit-1-heading">Ruta Oasis</h3>
               </div>
@@ -164,8 +143,6 @@
         </div>
       </div>  
     </div>
-
-
     <div class="site-section">
       <div class="container">
         <div class="row align-items-stretch">
@@ -221,9 +198,8 @@
           <p class="color-black-opacity-5">Conoce los eventos turisticos de la ciudad y sus alrededores</p>
         </div>
       </div>
-
         <div class="nonloop-block-13 owl-carousel">
-          <div class="item">
+           <div class="item">
             <div class="row mb-3 align-items-stretch">
               <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
@@ -458,7 +434,6 @@
   <script src="{{ asset('template2/js/jquery.magnific-popup.min.js') }}"></script>
   <script src="{{ asset('template2/js/bootstrap-datepicker.min.js') }}"></script>
   <script src="{{ asset('template2/js/aos.js') }}"></script>
-
   <script src="{{ asset('template2/js/main.js') }}"></script>
     
   </body>

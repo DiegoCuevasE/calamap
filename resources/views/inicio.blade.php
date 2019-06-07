@@ -5,35 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('template/fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="{{ asset('template2/fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('template2/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('template2/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('template2/css/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ asset('template2/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('template2/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('template2/css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('template2/fonts/flaticon/font2/flaticon.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('template2/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('template2/css/style.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('template/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/css/jquery-ui.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/css/owl.theme.default.min.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('template/css/lightgallery.min.css') }}">    
-    
-    <link rel="stylesheet" href="{{ asset('template/css/bootstrap-datepicker.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('template/fonts/flaticon/font/flaticon.css') }}">
-    
-    <link rel="stylesheet" href="{{ asset('template/css/swiper.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('template/css/aos.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('template/css/style.css') }}">
-
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
     
     
   </head>
-  <body>
-  
+<body class="site-wrap">
   <div class="site-wrap">
-
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -42,172 +36,193 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-    
 
-
-
-    <header class="site-navbar py-3" role="banner">
-
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          
-          <div class="col-6 col-xl-2" data-aos="fade-down">
-            <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">CKALAMA</a></h1>
+  <!-- Menu superior -->
+  <header class="site-navbar py-1" role="banner">
+    <div class="container justify-content-center">
+      <div class="row align-items-center">
+        <div class="col-6 col-xl-3">
+            <img src="{{ asset('template2/images/logockalamaweb.png') }}" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-10 col-md-6 d-none d-xl-block justify-content-center">
+          <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+              <li><a href="#">¿Donde Dormir?</a></li>
+              <li><a href="#">¿Que hacer?</a></li>
+              <li><a href="#">¿Donde Comer?</a></li>
+              <li><a href="#">¿Donde ir?</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-6 col-xl-3 text-right">
+          <div class="d-none d-xl-inline-block">
+            <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+              <li><a href="#" class="pl-3 pr-1 text-black">Iniciar sesión</a></li>
+              <li><a href="#" class="pl-2 pr-3 text-black">Registrarse</a></li>
+            </ul>
           </div>
-          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
-            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
-
-              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="services.html">Hoteles</a></li>
-                <li><a href="about.html">Restaurantes</a></li>
-                <li><a href="contact.html">Sitios Turisticos</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
-            <div class="d-none d-xl-inline-block">
-              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
-                <li>
-                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-youtube-play"></span></a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
-
-          </div>
-
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
         </div>
       </div>
+    </div>
+  </header>
       
-    </header>
+<div class="container">
 
+  <!-- Titulo -->
+  <div class="row mb-5 mt-5">
+    <div class="col-md-8 ">
+      <h2 class=" card-text">Visita nuestros sitios turisticos</h2>
+      <p class="color-black-opacity-5">Descubre los lugares turisticos de la ciudad</p>
+    </div>
+    <div class="col-md-4 float-right" >
+      <form class="form-inline md-form mr-auto mb-4">
+        <input class="form-control mr-sm-1 " type="text" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-elegant btn-rounded btn-sm my-0"  type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
 
-
-  <div class="container-fluid" data-aos="fade" data-aos-delay="500">
-    <div class="swiper-container images-carousel">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="image-wrap">
-                <div class="image-info">
-                  <h2 class="mb-3">Ruta Historica</h2>
-                  <a href="single.html" class="btn btn-outline-white py-2 px-4">Explorar</a>
-                </div>
-                <img src="{{ asset('template/images/rutaHisto2.jpg') }}" alt="Image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image-wrap">
-                <div class="image-info">
-                  <h2 class="mb-3">Ruta Gastronomica</h2>
-                  <a href="single.html" class="btn btn-outline-white py-2 px-4">Explorar</a>
-                </div>
-                <img src="{{ asset('template/images/rutaGastro.jpg') }}" alt="Image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image-wrap">
-                <div class="image-info">
-                  <h2 class="mb-3">Ruta Ancestral</h2>
-                  <a href="single.html" class="btn btn-outline-white py-2 px-4">Explorar</a>
-                </div>
-                <img src="{{ asset('template/images/img_3.jpg') }}" alt="Image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image-wrap">
-                <div class="image-info">
-                  <h2 class="mb-3">Architecture</h2>
-                  <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                </div>
-                <img src="{{ asset('template/images/img_4.jpg') }}" alt="Image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image-wrap">
-                <div class="image-info">
-                  <h2 class="mb-3">Animals</h2>
-                  <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                </div>
-                <img src="{{ asset('template/images/img_5.jpg') }}" alt="Image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image-wrap">
-                <div class="image-info">
-                  <h2 class="mb-3">Sports</h2>
-                  <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                </div>
-                <img src="{{ asset('template/images/img_6.jpg') }}" alt="Image">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="image-wrap">
-                <div class="image-info">
-                  <h2 class="mb-3">Travel</h2>
-                  <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                </div>
-                <img src="{{ asset('template/images/img_7.jpg') }}" alt="Image">
-              </div>
-            </div>
+        
+  <!-- Sitios turisticos -->
+  <div class="row justify-content-center">
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
         </div>
-
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
+        <div class="card-body">
+          <h4 class="card-tite">El Topater</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4 ">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">La cascada</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Parque el loa</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-tite">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4 ">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="footer py-4">
-    <div class="container-fluid">
-      <p>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      </p>
-    </div>
-  </div>
-
+  <!-- Paginacion -->
+<div class="row justify-content-center mb-5 mt-5">
+  <nav class="">
+    <ul class="pagination pg-amber">
+      <li class="page-item">
+        <a class="page-link" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item active"><a class="page-link">1</a></li>
+      <li class="page-item"><a class="page-link">2</a></li>
+      <li class="page-item"><a class="page-link">3</a></li>
+      <li class="page-item"><a class="page-link">4</a></li>
+      <li class="page-item"><a class="page-link">5</a></li>
+      <li class="page-item">
+        <a class="page-link" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
     
-
     
-    
-  </div>
+  
+  <script src="{{ asset('template2/js/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ asset('template2/js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ asset('template2/js/jquery-ui.js') }}"></script>
+  <script src="{{ asset('template2/js/popper.min.js') }}"></script>
+  <script src="{{ asset('template2/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('template2/js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('template2/js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ asset('template2/js/jquery.countdown.min.js') }}"></script>
+  <script src="{{ asset('template2/js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ asset('template2/js/bootstrap-datepicker.min.js') }}"></script>
+  <script src="{{ asset('template2/js/aos.js') }}"></script>
+  <script src="{{ asset('template2/js/main.js') }}"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
 
-  <script src="{{ asset('template/js/jquery-3.3.1.min.js') }}"></script>
-  <script src="{{ asset('template/js/jquery-migrate-3.0.1.min.js') }}"></script>
-  <script src="{{ asset('template/js/jquery-ui.js') }}"></script>
-  <script src="{{ asset('template/js/popper.min.js') }}"></script>
-  <script src="{{ asset('template/js/bootstrap.min.js') }}"></script>
-  <script src="{{ asset('template/js/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('template/js/jquery.stellar.min.js') }}"></script>
-  <script src="{{ asset('template/js/jquery.countdown.min.js') }}"></script>
-  <script src="{{ asset('template/js/jquery.magnific-popup.min.js') }}"></script>
-  <script src="{{ asset('template/js/bootstrap-datepicker.min.js') }}"></script>
-  <script src="{{ asset('template/js/swiper.min.js') }}"></script>
-  <script src="{{ asset('template/js/aos.js') }}"></script>
 
-  <script src="{{ asset('template/js/picturefill.min.js') }}"></script>
-  <script src="{{ asset('template/js/lightgallery-all.min.js') }}"></script>
-  <script src="{{ asset('template/js/jquery.mousewheel.min.js') }}"></script>
-
-  <script src="{{ asset('template/js/main.js') }}"></script>
   
   <script>
     $(document).ready(function(){
-      $('#lightgallery').lightGallery();
+      $('.carousel-3d-controls').mdbCarousel3d();
     });
   </script>
     
