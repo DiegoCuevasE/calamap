@@ -16,7 +16,7 @@ class CrearTablaUsuario extends Migration
         Schema::create('usuario', function (Blueprint $table) {
             $table->increments('cod_usuario');
             $table->string('nombre_usuario', 50);
-            $table->string('apeliido_usuario', 50);
+            $table->string('apellido_usuario', 50);
             $table->string('telefono_usuario', 15);
             $table->string('celular_usuario',15);
             $table->string('contraseña_usuario', 100);
