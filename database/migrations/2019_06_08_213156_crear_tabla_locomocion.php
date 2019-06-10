@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CrearTablaUsuario extends Migration
+class CrearTablaLocomocion extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CrearTablaUsuario extends Migration
      */
     public function up()
     {
-        Schema::create('usuario', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('usuario');
-            $table->string('password');
-            $table->boolean('genero');
+        Schema::create('locomocion', function (Blueprint $table) {
+            $table->increments('cod_locomocion');
+            $table->string('linea_locomocion', 2);
+            $table->string('recorrido_locomocion', 1);
+            $table->boolean('tipo_locomocion');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CrearTablaUsuario extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('usuario');
+        Schema::dropIfExists('locomocion');
     }
 }
