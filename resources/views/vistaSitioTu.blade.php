@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CKALAMA &mdash; Ciudad Oasis</title>
+    <title>CKALAMA &mdash; Colorlib Website Template</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -39,12 +39,12 @@
 
   <!-- Menu superior -->
   <header class="site-navbar py-1" role="banner">
-    <div class="container-fluid justify-content-center">
+    <div class="container justify-content-center">
       <div class="row align-items-center">
-        <div class="col-6 col-xl-2">
+        <div class="col-6 col-xl-3">
             <img src="{{ asset('template2/images/logockalamaweb.png') }}" alt="Image" class="img-fluid">
         </div>
-        <div class="col-10 col-md-8 d-none d-xl-block justify-content-center">
+        <div class="col-10 col-md-6 d-none d-xl-block justify-content-center">
           <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
               <li><a href="#">¿Donde Dormir?</a></li>
@@ -54,7 +54,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-6 col-xl-2 text-right">
+        <div class="col-6 col-xl-3 text-right">
           <div class="d-none d-xl-inline-block">
             <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
               <li><a href="#" class="pl-3 pr-1 text-black">Iniciar sesión</a></li>
@@ -66,17 +66,17 @@
       </div>
     </div>
   </header>
+      
 <div class="container">
 
   <!-- Titulo -->
-  
-  <div class="row mb-5 mt-5 ">
+  <div class="row mb-5 mt-5">
     <div class="col-md-8 ">
-      <h2 class=" card-text">Busca el mejor lugar para descanzar</h2>
-      <p class="color-black-opacity-5">Descubre los hoteles y hospedajes disponibles en ciudad</p>
+      <h2 class=" card-text">Visita nuestros sitios turisticos</h2>
+      <p class="color-black-opacity-5">Descubre los lugares turisticos de la ciudad</p>
     </div>
-    <div class="col-md-4 text-right justify-content-end align-items-center" >
-      <form class="form-inline md-form mr-auto mb-4 text-right">
+    <div class="col-md-4 float-right" >
+      <form class="form-inline md-form mr-auto mb-4">
         <input class="form-control mr-sm-1 " type="text" placeholder="Buscar" aria-label="Search">
         <button class="btn btn-elegant btn-rounded btn-sm my-0"  type="submit">Buscar</button>
       </form>
@@ -84,96 +84,93 @@
   </div>
 
         
-  <!-- Sitios MyPES 1-->
-  <div class="card promoting-card mt-5">
-  <div class="card-body d-flex flex-row ">
-    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-    <div>
-      <h4 class="card-title font-weight-bold mb-2">Hotel los Carvajales</h4>
-      <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p>
-    </div>
-  </div>
-  <div class="row ml-3 mr-3">
-    <div class="view overlay col-lg-2 collapsed "style="height: 100px; width: 100px;" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
-      <img class="card-img-top rounded-0 " style="width:100%; height:100%; " src="{{ asset('template2/images/rutaGastro.png') }}" alt="Card image cap">
-      <a href="#!">
-      <div class="mask rgba-white-slight" ></div>
-      </a>
-    </div>
-    <div class="view overlay col-lg-10 " data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
-         <p class="card-text ">Recently, Lorxem ipsu adam septura ttotle dimensap amire tionsito we added several exotic new dishes to the menu of our restaurant. They come from countries such as Mexico, Argentina, and Spain. Come to us, have a delicious wine and enjoy the juicy meals from around the world.</p>
-    </div>
-  </div>
-    <!-- Sitios MyPES 1 collapse-->
-  <div class="card-body justify-content-center">
-    <div class="collapse-content justify-content-center">
-      <div class="row justify-content-center">
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent">Servicios</p>
+  <!-- Sitios turisticos -->
+  <div class="row justify-content-center">
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
         </div>
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent">Horario</p>
-        </div>
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent">Dirección</p>
-        </div>
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent">Idiomas</p>
-        </div>
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent">Contacto</p>
+        <div class="card-body">
+          <h4 class="card-tite">El Topater</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
-      <i class="fas icon-instagram text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
-      <i class="fas icon-facebook text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
     </div>
-  </div>
-</div>
-  <!-- Sitios MyPES 2-->
-<div class="card promoting-card mt-5">
-  <div class="card-body d-flex flex-row ">
-    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
-    <div>
-      <h4 class="card-title font-weight-bold mb-2">Hotel los Carvajales</h4>
-      <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p>
-    </div>
-  </div>
-  <div class="row ml-3 mr-3">
-    <div class="view overlay col-lg-2 collapsed "style="height: 100px; width: 100px;" data-toggle="collapse" href="#collapseContent1" aria-expanded="false" aria-controls="collapseContent1">
-      <img class="card-img-top rounded-0 " style="width:100%; height:100%; " src="{{ asset('template2/images/rutaGastro.png') }}" alt="Card image cap">
-      <a href="#!">
-      <div class="mask rgba-white-slight" ></div>
-      </a>
-    </div>
-    <div class="view overlay col-lg-10 " data-toggle="collapse" href="#collapseContent1" aria-expanded="false" aria-controls="collapseContent1">
-         <p class="card-text ">Recently, Lorxem ipsu adam septura ttotle dimensap amire tionsito we added several exotic new dishes to the menu of our restaurant. They come from countries such as Mexico, Argentina, and Spain. Come to us, have a delicious wine and enjoy the juicy meals from around the world.</p>
-    </div>
-  </div>
-    <!-- Sitios MyPES 2 collapse-->
-  <div class="card-body justify-content-center">
-    <div class="collapse-content justify-content-center">
-      <div class="row justify-content-center">
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent1">Servicios</p>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4 ">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
         </div>
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent1">Horario</p>
-        </div>
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent1">Dirección</p>
-        </div>
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent1">Idiomas</p>
-        </div>
-        <div class="col-md-2">
-          <p class="card-text collapse" id="collapseContent1">Contacto</p>
+        <div class="card-body">
+          <h4 class="card-title">La cascada</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
-      <i class="fas icon-instagram text-muted float-right p-1 my-1" data-toggle="tooltip" data-placement="top" title="Share this post"></i>
-      <i class="fas icon-facebook text-muted float-right p-1 my-1 mr-3" data-toggle="tooltip" data-placement="top" title="I like it"></i>
+    </div>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Parque el loa</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-tite">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4 ">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck col-lg-4">
+      <div class="card mb-4">
+        <div class="view overlay">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
   <!-- Paginacion -->
 <div class="row justify-content-center mb-5 mt-5">
@@ -199,7 +196,9 @@
     </ul>
   </nav>
 </div>
-
+    
+    
+  
   <script src="{{ asset('template2/js/jquery-3.3.1.min.js') }}"></script>
   <script src="{{ asset('template2/js/jquery-migrate-3.0.1.min.js') }}"></script>
   <script src="{{ asset('template2/js/jquery-ui.js') }}"></script>

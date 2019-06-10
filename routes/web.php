@@ -36,6 +36,10 @@ Route::get('inscripcionMype', function () {
     return view('inscripcionMype');
 });
 
+Route::get('vistaSitio', function () {
+    return view('vistaSitio');
+});
+
 Auth::routes();
 
 Route::get('/redirect', 'SocialAuthFacebookController@redirect');
