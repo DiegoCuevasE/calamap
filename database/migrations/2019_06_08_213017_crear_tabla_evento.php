@@ -21,7 +21,7 @@ class CrearTablaEvento extends Migration
             //
             //foreanea de sitio turistico
             $table->unsignedInteger('cod_turistico');
-            $table->foreign('cod_turistico', 'fk_evento_sitioturistico')->references('cod_turistico')->on('sitioturistico')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('cod_turistico', 'fk_evento_sitioturistico')->references('cod_turistico')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->string('titulo_evento', 25);
             $table->string('descripcion_evento',254);

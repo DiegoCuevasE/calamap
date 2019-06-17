@@ -21,7 +21,7 @@ class CrearTablaContiene extends Migration
             //
             //foreanea de sitio turistico
             $table->unsignedInteger('cod_turistico');
-            $table->foreign('cod_turistico', 'fk_contiene_sitioturistico')->references('cod_turistico')->on('sitioturistico')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('cod_turistico', 'fk_contiene_sitioturistico')->references('cod_turistico')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->timestamps();
         });

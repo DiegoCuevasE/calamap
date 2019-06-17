@@ -17,7 +17,7 @@ class CrearTablaImagensitioturistico extends Migration
             $table->increments('cod_imagen_turistico');
             //foreanea de sitio turistico
             $table->unsignedInteger('cod_turistico');
-            $table->foreign('cod_turistico', 'fk_imagensitioturistico_sitioturistico')->references('cod_turistico')->on('sitioturistico')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('cod_turistico', 'fk_imagensitioturistico_sitioturistico')->references('cod_turistico')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->string('enlace_imagen_turistico', 254);
             $table->string('tipo_imagen_turistico', 15);

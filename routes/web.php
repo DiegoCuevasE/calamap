@@ -12,33 +12,32 @@
 */
 
 Route::get('/', function () {
-    return view('inicio2');
+    return view('moduloTurista.inicio2');
 });
 
 Route::get('formulario', function () {
-    return view('formulario');
+    return view('moduloTurista.formulario');
 });
 
-Route::get('inicio', function () {
-    return view('inicio');
-});
 
 
 Route::get('inicio2', function () {
-    return view('inicio2');
+    return view('moduloTurista.inicio2');
 });
 
 Route::get('formulario2', function () {
-    return view('formulario2');
+    return view('moduloTurista.formulario2');
 });
 
 Route::get('inscripcionMype', function () {
-    return view('inscripcionMype');
+    return view('moduloTurista.inscripcionMype');
 });
 
 Route::get('vistaSitio', function () {
-    return view('vistaSitio');
+    return view('moduloTurista.vistaSitio');
 });
+
+Route::resource('sitioTuristico','SitioturisticoController');
 
 Auth::routes();
 

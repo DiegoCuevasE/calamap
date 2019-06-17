@@ -13,7 +13,7 @@ class CrearTablaSitioturistico extends Migration
      */
     public function up()
     {
-        Schema::create('sitioturistico', function (Blueprint $table) {
+        Schema::create('sitioturisticos', function (Blueprint $table) {
             $table->increments('cod_turistico');
             //foreanea de usuario
             $table->unsignedInteger('cod_usuario');

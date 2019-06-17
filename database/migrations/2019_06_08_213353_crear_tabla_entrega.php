@@ -17,7 +17,7 @@ class CrearTablaEntrega extends Migration
             $table->increments('cod_entrega');
             //foreanea de sitio turistico
             $table->unsignedInteger('cod_turistico');
-            $table->foreign('cod_turistico', 'fk_entrega_sitioturistico')->references('cod_turistico')->on('sitioturistico')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('cod_turistico', 'fk_entrega_sitioturistico')->references('cod_turistico')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
             //
             //foreanea de servicio
             $table->unsignedInteger('cod_servicio');

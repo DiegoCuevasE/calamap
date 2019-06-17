@@ -86,6 +86,8 @@
         
   <!-- Sitios turisticos -->
   <div class="row justify-content-center">
+    @foreach ($sitios as $sitio)
+        
     <div class="card-deck col-lg-4">
       <div class="card mb-4">
         <div class="view overlay">
@@ -95,11 +97,13 @@
           </a>
         </div>
         <div class="card-body">
-          <h4 class="card-tite">El Topater</h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h4 class="card-tite">{{$sitio->nombre_turistico}}</h4>
+          <p class="card-text">{{$sitio->descripcion_turistico}}</p>
         </div>
       </div>
     </div>
+
+    @endforeach
     <div class="card-deck col-lg-4">
       <div class="card mb-4 ">
         <div class="view overlay">
