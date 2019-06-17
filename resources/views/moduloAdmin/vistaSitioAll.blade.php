@@ -87,7 +87,6 @@
   <!-- Sitios turisticos -->
   <div class="row justify-content-center">
     @foreach ($sitios as $sitio)
-        
     <div class="card-deck col-lg-4">
       <div class="card mb-4">
         <div class="view overlay">
@@ -101,11 +100,14 @@
           <p class="card-text">{{$sitio->descripcion_turistico}}</p>
         </div>
         <div class="card-body">
-        <form method="post" action="{{ url('/sitioTuristico/'.$sitio->cod_turistico)}}" >
-          {{csrf_field()}}
-          {{ method_field('DELETE')}}
-          <button type="submit" onclick="return confirm('¿Borrar?')"> borrar</button>
-        </form>
+
+          <a href="{{ url('/sitioTuristico/'.$sitio->cod_turistico.'/edit') }}">editar</a>
+
+          <form method="post" action="{{ url('/sitioTuristico/'.$sitio->cod_turistico)}}" >
+            {{csrf_field()}}
+            {{ method_field('DELETE')}}
+            <button type="submit" onclick="return confirm('¿Borrar?')"> borrar</button>
+          </form>
         </div>
         
       </div>

@@ -73,9 +73,12 @@ class SitioturisticoController extends Controller
      * @param  \App\sitioturistico  $sitioturistico
      * @return \Illuminate\Http\Response
      */
-    public function edit(sitioturistico $sitioturistico)
+    public function edit($cod_turistico)
     {
         //
+        $sitioturistico= sitioturistico::findOrFail($cod_turistico);
+
+        return view('moduloAdmin.editarSitioTuristico',compact('sitioturistico'));
     }
 
     /**
@@ -85,9 +88,14 @@ class SitioturisticoController extends Controller
      * @param  \App\sitioturistico  $sitioturistico
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, sitioturistico $sitioturistico)
+    public function update(Request $request, $cod_turistico)
     {
         //
+        $datoSitioTuristico=request()->except(['_token','_method']);
+        sitioturistico::where('cod_turistico','=',$cod_turistico)->update($datoSitioTuristico);
+        $sitioturistico= sitioturistico::findOrFail($cod_turistico);
+
+        return view('moduloAdmin.editarSitioTuristico',compact('sitioturistico'));
     }
 
     /**
@@ -98,6 +106,9 @@ class SitioturisticoController extends Controller
      */
     public function destroy($cod_turistico)
     {
+
+
+
         //debe tener el cod_turistico omo id
         sitioturistico::destroy($cod_turistico);
         return redirect('sitioTuristico');
