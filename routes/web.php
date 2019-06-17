@@ -38,6 +38,10 @@ Route::get('vistaSitio', function () {
 });
 
 Route::resource('sitioTuristico','SitioturisticoController');
+//Mypes (habilitada todas las rutas)
+Route::resource('mype', 'MypeController');
+//
+
 
 Auth::routes();
 
