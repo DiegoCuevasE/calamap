@@ -15,6 +15,9 @@ class ServicioController extends Controller
     public function index()
     {
         //
+        $datos['servicio']=Servicio::paginate(5);
+
+        return view('pruebasServicio.vistaServicios', $datos);
     }
 
     /**
@@ -25,6 +28,7 @@ class ServicioController extends Controller
     public function create()
     {
         //
+        return view('pruebasServicio.agregarServicio');
     }
 
     /**
@@ -36,6 +40,9 @@ class ServicioController extends Controller
     public function store(Request $request)
     {
         //
+        $datosServicio=request()->except('_token');
+        Servicio::insert($datosServicio);
+        return redirect('pruebasServicio');
     }
 
     /**
@@ -55,9 +62,11 @@ class ServicioController extends Controller
      * @param  \App\servicio  $servicio
      * @return \Illuminate\Http\Response
      */
-    public function edit(servicio $servicio)
+    public function edit($id)
     {
         //
+        $servicio = servicio::findOrFail($id);
+        return view('pruebasServicio.editarServicio', compact('servicio'));
     }
 
     /**
@@ -67,9 +76,14 @@ class ServicioController extends Controller
      * @param  \App\servicio  $servicio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, servicio $servicio)
+    public function update(Request $request, $id)
     {
         //
+        $datosServicio=request()->except(['_token','_method']);
+        mype::where('id','=',$id)->update($datosServicio);
+
+        $mype = mype::findOrFail($id);
+        return view('moduloServicio.editarServicio', compact('servicio'));
     }
 
     /**
@@ -78,8 +92,10 @@ class ServicioController extends Controller
      * @param  \App\servicio  $servicio
      * @return \Illuminate\Http\Response
      */
-    public function destroy(servicio $servicio)
+    public function destroy($id)
     {
         //
+        servicio::destroy($id);
+        return redirect('pruebasServicio');
     }
 }

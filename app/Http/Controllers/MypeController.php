@@ -81,7 +81,7 @@ class MypeController extends Controller
     {
         //
         $datosMype=request()->except(['_token','_method']);
-        mype::where('cod_mype','=',$id)->update($datosMype);
+        mype::where('id','=',$id)->update($datosMype);
 
         $mype = mype::findOrFail($id);
         return view('moduloMype.editarMype', compact('mype'));

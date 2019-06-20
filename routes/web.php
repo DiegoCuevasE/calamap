@@ -42,7 +42,9 @@ Route::resource('sitioTuristico','SitioturisticoController');
 //Mypes (habilitada todas las rutas)
 Route::resource('moduloMype', 'MypeController');
 //
-
+//Mypes (habilitada todas las rutas)
+Route::resource('pruebasServicio', 'ServicioController');
+//
 
 Auth::routes();
 

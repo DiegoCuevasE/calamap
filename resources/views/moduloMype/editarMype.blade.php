@@ -2,11 +2,11 @@
     {{ csrf_field() }}
     {{ method_field('PATCH') }}
 
-        <label for="Nombre de Fantasia">{{'Nombre de Fantasia'}}</label>
-        <input type="text" name="nombre_fantasia_mype" id="Nombre_Fantasia_mype" value="{{ $mype->nombre_fantasia_mype }}">
-        <br/>
-        <label for="Razón Social">{{'Razón Social'}}</label>
-        <select name="razon_social_mype" id="razon_social_mype">
+    <label for="Nombre de Fantasia">{{'Nombre de Fantasia'}}</label>
+    <input type="text" name="nombre_fantasia_mype" id="Nombre_Fantasia_mype" value="{{ $mype->nombre_fantasia_mype }}">
+    <br/>
+    <label for="Razón Social">{{'Razón Social'}}</label>
+    <select name="razon_social_mype" id="razon_social_mype">
         <option value="Gastronómica">Gastronómica</option>
         <option value="Hotelera">Hotelera</option>
         <option value="Turistica">Turística</option>
