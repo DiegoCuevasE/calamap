@@ -1,6 +1,6 @@
 
 <html lang="es">
-<form action="{{ url('/mype')}}" method="post" enctype="multipart/form-data">
+<form action="{{ url('/moduloMype')}}" method="post" enctype="multipart/form-data">
    {{ csrf_field() }}
         <h1>Agregar Mype</h1>
         <label for="Nombre de Fantasia">{{'Nombre de Fantasia'}}</label>

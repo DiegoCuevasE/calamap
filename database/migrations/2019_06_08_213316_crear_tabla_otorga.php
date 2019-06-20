@@ -14,14 +14,14 @@ class CrearTablaOtorga extends Migration
     public function up()
     {
         Schema::create('otorga', function (Blueprint $table) {
-            $table->increments('cod_otorga');
+            $table->increments('id');
             //foreanea de servicio
-            $table->unsignedInteger('cod_servicio');
-            $table->foreign('cod_servicio', 'fk_otorga_servicio')->references('cod_servicio')->on('servicio')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('servicio_id');
+            $table->foreign('servicio_id', 'fk_otorga_servicio')->references('id')->on('servicio')->onDelete('cascade')->onUpdate('cascade');
             //
             //foreanea de mype
-            $table->unsignedInteger('cod_mype');
-            $table->foreign('cod_mype', 'fk_otorga_mype')->references('cod_mype')->on('mype')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('mype_id');
+            $table->foreign('mype_id', 'fk_otorga_mype')->references('id')->on('mype')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->timestamps();
         });

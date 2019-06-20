@@ -34,9 +34,9 @@
             <td>{{$mype->pagina_mype}}</td>
             <td>{{$mype->red_social_mype}}</td>
             <td>
-            <a href="{{ url('/mype/'.$mype->cod_mype.'/edit') }}">Editar</a> 
+            <a href="{{ url('/moduloMype/'.$mype->id.'/edit') }}">Editar</a> 
                 | 
-                <form method="post" action="{{url('/mype/'.$mype->cod_mype)}}">
+                <form method="post" action="{{url('/moduloMype/'.$mype->id)}}">
                 {{ csrf_field() }}
                 {{ method_field('DELETE') }} 
                 <button type="submit" onclick="return confirm('¿Borrar?');">Borrar</button>  

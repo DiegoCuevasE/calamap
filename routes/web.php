@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('moduloTurista.inicio2');
+    $mype = App\Mype::findOrFail(1);
+    return $mype->servicios;
 });
 
 Route::get('formulario', function () {
@@ -39,7 +40,7 @@ Route::get('vistaSitio', function () {
 
 Route::resource('sitioTuristico','SitioturisticoController');
 //Mypes (habilitada todas las rutas)
-Route::resource('mype', 'MypeController');
+Route::resource('moduloMype', 'MypeController');
 //
 
 

@@ -1,4 +1,4 @@
-<form action="{{ url('/mype/' . $mype->cod_mype) }}" method="post" enctype="multipart/form-data">
+<form action="{{ url('/moduloMype/' . $mype->id) }}" method="post" enctype="multipart/form-data">
     {{ csrf_field() }}
     {{ method_field('PATCH') }}
 

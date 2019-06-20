@@ -14,9 +14,9 @@ class CrearTablaMype extends Migration
     public function up()
     {
         Schema::create('mype', function (Blueprint $table) {
-            $table->increments('cod_mype');
+            $table->increments('id');
             /*foreanea de usuario
-            $table->unsignedInteger('cod_usuario');
+            $table->unsignedInteger('usuario_id');
             $table->foreign('cod_usuario', 'fk_mype_usuario')->references('cod_usuario')->on('usuario')->onDelete('cascade')->onUpdate('cascade');
             */
             $table->string('nombre_fantasia_mype', 20);

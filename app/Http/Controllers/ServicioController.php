@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\mype;
+use App\servicio;
 use Illuminate\Http\Request;
 
-class MypeController extends Controller
+class ServicioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,6 @@ class MypeController extends Controller
     public function index()
     {
         //
-        $datos['mype']=Mype::paginate(5);
-
-        return view('moduloMype.vistaMypes', $datos);
     }
 
     /**
@@ -28,7 +25,6 @@ class MypeController extends Controller
     public function create()
     {
         //
-        return view('moduloMype.agregarMype');
     }
 
     /**
@@ -39,20 +35,16 @@ class MypeController extends Controller
      */
     public function store(Request $request)
     {
-        //$datosMypes=request()->all();
-        $datosMype=request()->except('_token');
-        Mype::insert($datosMype);
-        //return response()->json($datosMypes);
-        return redirect('moduloMype');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\mype  $mype
+     * @param  \App\servicio  $servicio
      * @return \Illuminate\Http\Response
      */
-    public function show(mype $mype)
+    public function show(servicio $servicio)
     {
         //
     }
@@ -60,44 +52,34 @@ class MypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\mype  $mype
+     * @param  \App\servicio  $servicio
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(servicio $servicio)
     {
         //
-        $mype = mype::findOrFail($id);
-        return view('moduloMype.editarMype', compact('mype'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\mype  $mype
+     * @param  \App\servicio  $servicio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, servicio $servicio)
     {
         //
-        $datosMype=request()->except(['_token','_method']);
-        mype::where('cod_mype','=',$id)->update($datosMype);
-
-        $mype = mype::findOrFail($id);
-        return view('moduloMype.editarMype', compact('mype'));
-        
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\mype  $mype
+     * @param  \App\servicio  $servicio
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(servicio $servicio)
     {
         //
-        mype::destroy($id);
-        return redirect('moduloMype');
     }
 }
