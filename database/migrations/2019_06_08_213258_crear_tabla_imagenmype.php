@@ -13,11 +13,11 @@ class CrearTablaImagenmype extends Migration
      */
     public function up()
     {
-        Schema::create('imagenmype', function (Blueprint $table) {
+        Schema::create('imagenmypes', function (Blueprint $table) {
             $table->increments('id');
             //foreanea de mype
             $table->unsignedInteger('mype_id');
-            $table->foreign('mype_id', 'fk_imagenmype_mype')->references('id')->on('mype')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('mype_id', 'fk_imagenmypes_mypes')->references('id')->on('mypes')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->string('enlace_imagen_mype', 254);
             $table->string('tipo_imagen_mype', 15);

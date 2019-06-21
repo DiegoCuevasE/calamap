@@ -12,8 +12,17 @@
 */
 
 Route::get('/', function () {
-    $mype = App\Mype::findOrFail(1);
-    return $mype->servicios;
+    //$mype = 'App\Mype'::findOrFail(1);
+    //return $mype->imagenMypes;
+    $mypes = 'App\Mype'::with('imagenMypes')->get();
+    foreach($mypes as $mype){
+        foreach($mype->imagenMypes as $imagen){
+            echo $imagen->enlace_imagen_mype;
+            echo "<br/>";
+        }
+        echo $mype->nombre_fantasia_mype;
+        echo "<br/>";
+    }
 });
 
 Route::get('formulario', function () {

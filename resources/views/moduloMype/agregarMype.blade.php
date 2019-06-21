@@ -22,7 +22,7 @@
         <label for="Horario">{{'Horario'}}</label>
         <input type="text" name="horario_mype" id="horario_mype">
         <br/>
-        <input type="hidden" id="Estado_mype" name="Estado_mype" value="0">
+        <input type="hidden" id="estado_mype" name="estado_mype" value="1">
         <label for="Teléfono">{{'Teléfono'}}</label>
         <input type="text" name="telefono_mype" id="telefono_mype" value="">
         <br/>
@@ -38,7 +38,10 @@
         <label for="Red Social(Opcional)">{{'Red Social(Opcional)'}}</label>
         <input type="url" name="red_social_mype" id="red_social_mype" value="">
         <br/>
-        
+        <input type="file" name="enlace_imagen_mype" id="enlace_imagen_mype">
+        <br/>
+        <input type="hidden" id="tipo_imagen_mype" name="tipo_imagen_mype" value="logo">
+
         <input type="submit" value="Agregar">
     </form>
 </html>

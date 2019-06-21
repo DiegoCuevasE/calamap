@@ -13,7 +13,7 @@ class CrearTablaMype extends Migration
      */
     public function up()
     {
-        Schema::create('mype', function (Blueprint $table) {
+        Schema::create('mypes', function (Blueprint $table) {
             $table->increments('id');
             /*foreanea de usuario
             $table->unsignedInteger('usuario_id');

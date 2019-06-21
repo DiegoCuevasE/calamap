@@ -21,7 +21,7 @@ class CrearTablaEntrega extends Migration
             //
             //foreanea de servicio
             $table->unsignedInteger('servicio_id');
-            $table->foreign('servicio_id', 'fk_entrega_servicio')->references('id')->on('servicio')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('servicio_id', 'fk_entrega_servicios')->references('id')->on('servicios')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->timestamps();
         });

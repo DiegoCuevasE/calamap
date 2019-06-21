@@ -12,5 +12,8 @@ class mype extends Model
         return $this->belongsToMany(Servicio::class, 'otorgas','mype_id','servicio_id'); //Con asignacion de las claves foraneas rellacionadas
         //return $this->belongsToMany(Servicio::class);
 
+    }
+    public function imagenMypes(){
+        return $this->hasMany(imagenMype::class);
     }   
 }

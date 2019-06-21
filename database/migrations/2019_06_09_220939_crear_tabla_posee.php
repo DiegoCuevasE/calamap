@@ -21,7 +21,7 @@ class CrearTablaPosee extends Migration
             //
             //foreanea de mype
             $table->unsignedInteger('mype_id');
-            $table->foreign('mype_id', 'fk_posee_mype')->references('id')->on('mype')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('mype_id', 'fk_posee_mype')->references('id')->on('mypes')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->timestamps();
         });

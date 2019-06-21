@@ -39,9 +39,14 @@ class MypeController extends Controller
      */
     public function store(Request $request)
     {
+
         //$datosMypes=request()->all();
-        $datosMype=request()->except('_token');
+        $datosMype=request()->except('_token', 'enlace_imagen_mype', 'tipo_imagen_mype');
         Mype::insert($datosMype);
+        $datosImagenMype=reques()->only('enlaca_imagen_mype', 'tipo_imagen_mype');
+        if($request->hasFile('enlace_imagen_mype')){
+            $datosImagenMype['enlace_imagen_mype']=$request->file('enlace_imagen_mype')->store('uploads','public');
+        }
         //return response()->json($datosMypes);
         return redirect('moduloMype');
     }
@@ -84,8 +89,9 @@ class MypeController extends Controller
         mype::where('id','=',$id)->update($datosMype);
 
         $mype = mype::findOrFail($id);
-        return view('moduloMype.editarMype', compact('mype'));
-        
+        //return view('moduloMype.editarMype', compact('mype'));
+        return redirect('moduloMype');
+    
     }
 
     /**
