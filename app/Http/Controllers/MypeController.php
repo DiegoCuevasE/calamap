@@ -43,7 +43,7 @@ class MypeController extends Controller
         //$datosMypes=request()->all();
         $datosMype=request()->except('_token', 'enlace_imagen_mype', 'tipo_imagen_mype');
         Mype::insert($datosMype);
-        $datosImagenMype=reques()->only('enlaca_imagen_mype', 'tipo_imagen_mype');
+        $datosImagenMype=reques()->only('enlace_imagen_mype', 'tipo_imagen_mype');
         if($request->hasFile('enlace_imagen_mype')){
             $datosImagenMype['enlace_imagen_mype']=$request->file('enlace_imagen_mype')->store('uploads','public');
         }

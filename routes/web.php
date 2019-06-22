@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-    $mype = 'App\Mype'::findOrFail(2);
-    return $mype->servicios;
-    //$servicio = 'App\Servicio'::findOrFail(1);
-    //return $servicio->mypes;
+    //$mype = 'App\Mype'::findOrFail(2);
+    //return $mype->servicios;
+    $servicio = 'App\Servicio'::findOrFail(1);
+    return $servicio->mypes;
 });
 
 Route::get('formulario', function () {
