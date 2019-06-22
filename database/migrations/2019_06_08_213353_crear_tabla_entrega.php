@@ -13,15 +13,15 @@ class CrearTablaEntrega extends Migration
      */
     public function up()
     {
-        Schema::create('entrega', function (Blueprint $table) {
-            $table->increments('cod_entrega');
+        Schema::create('entregas', function (Blueprint $table) {
+            $table->increments('id');
             //foreanea de sitio turistico
-            $table->unsignedInteger('cod_turistico');
-            $table->foreign('cod_turistico', 'fk_entrega_sitioturistico')->references('cod_turistico')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('turistico_id');
+            $table->foreign('turistico_id', 'fk_entregas_sitioturisticos')->references('id')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
             //
             //foreanea de servicio
             $table->unsignedInteger('servicio_id');
-            $table->foreign('servicio_id', 'fk_entrega_servicios')->references('id')->on('servicios')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('servicio_id', 'fk_entregas_servicios')->references('id')->on('servicios')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->timestamps();
         });

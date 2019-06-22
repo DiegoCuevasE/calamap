@@ -13,15 +13,15 @@ class CrearTablaPosee extends Migration
      */
     public function up()
     {
-        Schema::create('posee', function (Blueprint $table) {
-            $table->increments('cod_posee');
+        Schema::create('posees', function (Blueprint $table) {
+            $table->increments('id');
             //foreanea de locomocion
-            $table->unsignedInteger('cod_locomocion');
-            $table->foreign('cod_locomocion', 'fk_posee_locomocion')->references('cod_locomocion')->on('locomocion')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('locomocion_id');
+            $table->foreign('locomocion_id', 'fk_posees_locomocions')->references('id')->on('locomocions')->onDelete('cascade')->onUpdate('cascade');
             //
             //foreanea de mype
             $table->unsignedInteger('mype_id');
-            $table->foreign('mype_id', 'fk_posee_mype')->references('id')->on('mypes')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('mype_id', 'fk_posees_mypes')->references('id')->on('mypes')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->timestamps();
         });

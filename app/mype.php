@@ -14,6 +14,9 @@ class mype extends Model
 
     }
     public function imagenMypes(){
-        return $this->hasMany(imagenMype::class);
-    }   
+        return $this->hasMany(ImagenMype::class);
+    }
+    public function idiomas(){
+        return $this->belongsToMany(Idioma::class,'manejos','mype_id','idioma_id');
+    }
 }

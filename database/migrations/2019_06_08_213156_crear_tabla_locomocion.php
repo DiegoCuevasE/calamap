@@ -13,8 +13,8 @@ class CrearTablaLocomocion extends Migration
      */
     public function up()
     {
-        Schema::create('locomocion', function (Blueprint $table) {
-            $table->increments('cod_locomocion');
+        Schema::create('locomocions', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('linea_locomocion', 2);
             $table->string('recorrido_locomocion', 1);
             $table->boolean('tipo_locomocion');

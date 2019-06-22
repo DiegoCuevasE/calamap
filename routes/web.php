@@ -14,8 +14,11 @@
 Route::get('/', function () {
     //$mype = 'App\Mype'::findOrFail(2);
     //return $mype->servicios;
-    $servicio = 'App\Servicio'::findOrFail(1);
-    return $servicio->mypes;
+    //$servicio = 'App\Servicio'::findOrFail(1);
+    //return $servicio->mypes;
+
+    $idioma = 'App\Idioma'::findOrFail(3);
+    return $idioma->mypes;
 });
 
 Route::get('formulario', function () {
@@ -40,6 +43,7 @@ Route::get('vistaSitio', function () {
     return view('moduloTurista.vistaSitio');
 });
 
+
 Route::resource('sitioTuristico','SitioturisticoController');
 //Mypes (habilitada todas las rutas)
 Route::resource('moduloMype', 'MypeController');
@@ -47,6 +51,8 @@ Route::resource('moduloMype', 'MypeController');
 //Mypes (habilitada todas las rutas)
 Route::resource('pruebasServicio', 'ServicioController');
 //
+
+
 
 Auth::routes();
 

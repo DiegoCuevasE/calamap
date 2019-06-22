@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLocomocionsTable extends Migration
+class CreateIdiomasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateLocomocionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('locomocions', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('idiomas', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre_idioma');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateLocomocionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('locomocions');
+        Schema::dropIfExists('idiomas');
     }
 }

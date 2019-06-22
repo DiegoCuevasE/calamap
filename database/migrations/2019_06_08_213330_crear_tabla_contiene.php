@@ -13,15 +13,15 @@ class CrearTablaContiene extends Migration
      */
     public function up()
     {
-        Schema::create('contiene', function (Blueprint $table) {
-            $table->increments('cod_contiene');
+        Schema::create('contienes', function (Blueprint $table) {
+            $table->increments('id');
             //foreanea de locomocion
-            $table->unsignedInteger('cod_locomocion');
-            $table->foreign('cod_locomocion', 'fk_contiene_locomocion')->references('cod_locomocion')->on('locomocion')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('locomocion_id');
+            $table->foreign('locomocion_id', 'fk_contienes_locomocions')->references('id')->on('locomocions')->onDelete('cascade')->onUpdate('cascade');
             //
             //foreanea de sitio turistico
-            $table->unsignedInteger('cod_turistico');
-            $table->foreign('cod_turistico', 'fk_contiene_sitioturistico')->references('cod_turistico')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('turistico_id');
+            $table->foreign('turistico_id', 'fk_contienes_sitioturisticos')->references('id')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->timestamps();
         });

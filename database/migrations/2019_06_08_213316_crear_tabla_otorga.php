@@ -17,11 +17,11 @@ class CrearTablaOtorga extends Migration
             $table->increments('id');
             //foreanea de servicio
             $table->unsignedInteger('servicio_id');
-            $table->foreign('servicio_id', 'fk_otorgas_servicios')->references('id')->on('servicios');
+            $table->foreign('servicio_id', 'fk_otorgas_servicios')->references('id')->on('servicios')->onDelete('cascade')->onUpdate('cascade');
             //
             //foreanea de mype
             $table->unsignedInteger('mype_id');
-            $table->foreign('mype_id', 'fk_otorgas_mypes')->references('id')->on('mypes');
+            $table->foreign('mype_id', 'fk_otorgas_mypes')->references('id')->on('mypes')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->timestamps();
         });

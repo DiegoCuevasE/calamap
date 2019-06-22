@@ -14,10 +14,10 @@ class CrearTablaSitioturistico extends Migration
     public function up()
     {
         Schema::create('sitioturisticos', function (Blueprint $table) {
-            $table->increments('cod_turistico');
+            $table->increments('id');
             //foreanea de usuario
-            $table->unsignedInteger('cod_usuario');
-            $table->foreign('cod_usuario', 'fk_sitioturistico_usuario')->references('cod_usuario')->on('usuario')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id', 'fk_sitioturisticos_users')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->string('tipo_turistico', 50);
             $table->string('nombre_turistico', 50);

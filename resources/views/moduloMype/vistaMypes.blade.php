@@ -14,7 +14,9 @@
                 <th>Celular</th>
                 <th>Correo</th>
                 <th>Página</th>
-                <th>Red Social</th>
+                <th>Facebook</th>
+                <th>Instagram</th>
+                <th>Otra Red Social</th>
                 <th>Acciones</th>
             </tr>        
         </thead>
@@ -32,7 +34,9 @@
             <td>{{$mype->celular_mype}}</td>
             <td>{{$mype->correo_mype}}</td>
             <td>{{$mype->pagina_mype}}</td>
-            <td>{{$mype->red_social_mype}}</td>
+            <td>{{$mype->facebook_mype}}</td>
+            <td>{{$mype->instagram_mype}}</td>
+            <td>{{$mype->otra_redS_mype}}</td>
             <td>
             <a href="{{ url('/moduloMype/'.$mype->id.'/edit') }}">Editar</a> 
                 | 

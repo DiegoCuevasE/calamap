@@ -13,14 +13,16 @@ class CrearTablaImagensitioturistico extends Migration
      */
     public function up()
     {
-        Schema::create('imagensitioturistico', function (Blueprint $table) {
-            $table->increments('cod_imagen_turistico');
+        Schema::create('imagensitioturisticos', function (Blueprint $table) {
+            $table->increments('id');
             //foreanea de sitio turistico
-            $table->unsignedInteger('cod_turistico');
-            $table->foreign('cod_turistico', 'fk_imagensitioturistico_sitioturistico')->references('cod_turistico')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('sitioturistico_id');
+            $table->foreign('sitioturistico_id')->references('id')->on('sitioturisticos')->onDelete('cascade')->onUpdate('cascade');
             //
             $table->string('enlace_imagen_turistico', 254);
             $table->string('tipo_imagen_turistico', 15);
+            $table->timestamps();
+
         });
     }
 

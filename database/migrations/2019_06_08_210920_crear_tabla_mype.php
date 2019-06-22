@@ -15,10 +15,10 @@ class CrearTablaMype extends Migration
     {
         Schema::create('mypes', function (Blueprint $table) {
             $table->increments('id');
-            /*foreanea de usuario
-            $table->unsignedInteger('usuario_id');
-            $table->foreign('cod_usuario', 'fk_mype_usuario')->references('cod_usuario')->on('usuario')->onDelete('cascade')->onUpdate('cascade');
-            */
+            //foreanea de user
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id', 'fk_mypes_users')->references('id')->on('users')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            //
             $table->string('nombre_fantasia_mype', 20);
             $table->string('razon_social_mype', 100);           
             $table->string('direccion_mype', 50);
@@ -28,8 +28,10 @@ class CrearTablaMype extends Migration
             $table->string('telefono_mype', 15);
             $table->string('celular_mype', 15);
             $table->string('correo_mype', 50);
-            $table->string('pagina_mype', 50);
-            $table->string('red_social_mype', 50);
+            $table->string('idioma_mype', 4);
+            $table->string('facebook_mype', 50);
+            $table->string('instagram_mype', 50);
+            $table->string('otra_redS_mype', 50);
             $table->timestamps();
         });
     }

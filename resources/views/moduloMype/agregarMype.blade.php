@@ -3,14 +3,19 @@
 <form action="{{ url('/moduloMype')}}" method="post" enctype="multipart/form-data">
    {{ csrf_field() }}
         <h1>Agregar Mype</h1>
+        
+        <input type="hidden" name="user_id" id="user_id" value="1">        
+        <br/>
         <label for="Nombre de Fantasia">{{'Nombre de Fantasia'}}</label>
         <input type="text" name="nombre_fantasia_mype" id="Nombre_Fantasia_mype" value="">
         <br/>
         <label for="Razón Social">{{'Razón Social'}}</label>
         <select name="razon_social_mype" id="razon_social_mype">
-            <option value="Gastronómica">Gastronómica</option>
-            <option value="Hotelera">Hotelera</option>
-            <option value="Turistica">Turística</option>
+            <option value="Gastronomía">Gastronomía</option>
+            <option value="Hotelería">Hoteleíra</option>
+            <option value="Turismo">Turismo</option>
+            <option value="Bazares">Bazares</option>
+            <option value="Artesanía">Artesanía</option>
         </select>
         <br/>
         <label for="Dirección">{{'Dirección'}}</label>
@@ -24,20 +29,20 @@
         <select name="d1" id="d1">
             <option value="Lunes">Lunes</option>
             <option value="Martes">Martes</option>
-            <option value="Miercoles">Miercoles</option>
+            <option value="Miércoles">Miercoles</option>
             <option value="Jueves">Jueves</option>
             <option value="Viernes">Viernes</option>
-            <option value="Sabado">Sabado</option>
+            <option value="Sábado">Sabado</option>
             <option value="Domingo">Domingo</option>
         </select>
         <label for=" a ">{{' a '}}</label>
         <select name="d2" id="d2">
             <option value="Lunes">Lunes</option>
             <option value="Martes">Martes</option>
-            <option value="Miercoles">Miercoles</option>
+            <option value="Miércoles">Miercoles</option>
             <option value="Jueves">Jueves</option>
             <option value="Viernes">Viernes</option>
-            <option value="Sabado">Sabado</option>
+            <option value="Sábado">Sabado</option>
             <option value="Domingo">Domingo</option>
         </select>
         <label for=" de ">{{' de '}}</label>
@@ -143,13 +148,11 @@
             <option value="23:30">23:30</option>       
         </select>
         <label for=" Hrs ">{{' Hrs '}}</label>
-
         <br/>
-        <input type="text" name="horario_mype" id="horario_mype" value="">
-        <br/>
-
-
-
+        
+        
+        
+        
         <input type="hidden" id="estado_mype" name="estado_mype" value="0">
         <label for="Teléfono">{{'Teléfono'}}</label>
         <input type="text" name="telefono_mype" id="telefono_mype" value="">
@@ -160,15 +163,33 @@
         <label for="Correo">{{'Correo'}}</label>
         <input type="email" name="correo_mype" id="correo_mype" value="">
         <br/>
+        
+        
+        
+        
+        <!--<label for="Idioma">{{'Idioma'}}</label>
+        <fieldset>  
+        <input type="checkbox" name="" value="" onclick="return ValidatePetSelection();">Cats<br>  
+        <input type="checkbox" name="" value="" onclick="return ValidatePetSelection();">Dogs<br>  
+        <input type="checkbox" name="" value="" onclick="return ValidatePetSelection();">Birds<br>  
+        <br>-->
+        </fieldset>
         <label for="Página(Opcional)">{{'Página(Opcional)'}}</label>
         <input type="url" name="pagina_mype" id="pagina_mype" value="">
         <br/>
-        <label for="Red Social(Opcional)">{{'Red Social(Opcional)'}}</label>
-        <input type="url" name="red_social_mype" id="red_social_mype" value="">
+        <label for="Facebook(Opcional)">{{'Facebook(Opcional)'}}</label>
+        <input type="url" name="facebook_mype" id="facebook_mype" value="">
+        <br/>
+        <label for="Instagram(Opcional)">{{'Instagram(Opcional)'}}</label>
+        <input type="url" name="instagram_mype" id="instagram_mype" value="">
+        <br/>
+        <label for="Otra Red Social(Opcional)">{{'Otra Red Social(Opcional)'}}</label>
+        <input type="url" name="otra_redS_mype" id="otra_redS_mype" value="">
         <br/>
         <input type="file" name="enlace_imagen_mype" id="enlace_imagen_mype">
         <br/>
         <input type="hidden" id="tipo_imagen_mype" name="tipo_imagen_mype" value="logo">
+
 
         <input type="submit" value="Agregar">
     </form>
