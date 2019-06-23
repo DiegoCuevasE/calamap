@@ -51,7 +51,9 @@ Route::resource('moduloMype', 'MypeController');
 //Mypes (habilitada todas las rutas)
 Route::resource('pruebasServicio', 'ServicioController');
 //
-
+//Idiomas
+Route::get('/idiomas', 'IdiomaController@getIdiomas'); 
+//
 
 
 Auth::routes();

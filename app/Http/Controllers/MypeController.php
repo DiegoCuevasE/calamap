@@ -39,28 +39,33 @@ class MypeController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'idioma_id'=>'required|exist:idiomas,id',
+            'servicio_id'=>'required|exist:servicios,id',
 
+        ]);
+        return 'todo bien';
         //$datosMypes=request()->all();
         
         $horario=request('d1').' a '.request('d2').' de '.request('h1').' hrs a '.request('h2').' hrs';
         
-    $datosmype = new mype();
-    $datosmype->user_id=request('user_id');
-    $datosmype->nombre_fantasia_mype=request('nombre_fantasia_mype');
-    $datosmype->razon_social_mype=request('razon_social_mype');
-    $datosmype->direccion_mype=request('direccion_mype');
-    $datosmype->descripcion_mype=request('descripcion_mype');
-    $datosmype->horario_mype= $horario;
-    $datosmype->estado_mype=request('estado_mype');
-    $datosmype->telefono_mype=request('telefono_mype');
-    $datosmype->celular_mype=request('celular_mype');
-    $datosmype->correo_mype=request('correo_mype');
-    $datosmype->pagina_mype=request('pagina_mype');
-    $datosmype->facebook_mype=request('facebook_mype');
-    $datosmype->instagram_mype=request('instagram_mype');
-    $datosmype->otra_redS_mype=request('otra_redS_mype');
-    $datosmype->save();
-    return redirect('moduloMype');
+        $datosmype = new mype();
+        $datosmype->user_id=request('user_id');
+        $datosmype->nombre_fantasia_mype=request('nombre_fantasia_mype');
+        $datosmype->razon_social_mype=request('razon_social_mype');
+        $datosmype->direccion_mype=request('direccion_mype');
+        $datosmype->descripcion_mype=request('descripcion_mype');
+        $datosmype->horario_mype= $horario;
+        $datosmype->estado_mype=request('estado_mype');
+        $datosmype->telefono_mype=request('telefono_mype');
+        $datosmype->celular_mype=request('celular_mype');
+        $datosmype->correo_mype=request('correo_mype');
+        $datosmype->pagina_mype=request('pagina_mype');
+        $datosmype->facebook_mype=request('facebook_mype');
+        $datosmype->instagram_mype=request('instagram_mype');
+        $datosmype->otra_redS_mype=request('otra_redS_mype');
+        $datosmype->save();
+        return redirect('moduloMype');
 
        
         //$datosImagenMype=reques()->only('enlace_imagen_mype', 'tipo_imagen_mype');
@@ -71,7 +76,9 @@ class MypeController extends Controller
         //return redirect('moduloMype');
        // return redirect('moduloMype');
     }
-
+    public function getIdiomas(Request $request){
+        
+    }
     /**
      * Display the specified resource.
      *

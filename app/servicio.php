@@ -11,6 +11,6 @@ class servicio extends Model
     {
         return $this->belongsToMany(Mype::class,'otorgas', 'mype_id',  'servicio_id');
     }
-    
+    protected $table = 'servicios';
 
 }

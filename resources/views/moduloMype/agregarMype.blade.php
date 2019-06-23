@@ -18,6 +18,12 @@
             <option value="Artesanía">Artesanía</option>
         </select>
         <br/>
+        <label for="Servicios">{{'Servicios'}}</label>
+        <br>
+            @foreach ($servicioArray as $data)                                       
+                <input type="checkbox" name="nombre_servicio" id="nombre_servicio" value="{{ $data->id }}">{{ $data->nombre_servicio }}<br>                                                  
+            @endforeach
+        <br>
         <label for="Dirección">{{'Dirección'}}</label>
         <input type="text" name="direccion_mype" id="direccion_mype" value="">
         <br/>
@@ -163,12 +169,26 @@
         <label for="Correo">{{'Correo'}}</label>
         <input type="email" name="correo_mype" id="correo_mype" value="">
         <br/>
-        
-        
-        
-        
-        <!--<label for="Idioma">{{'Idioma'}}</label>
-        <fieldset>  
+        <!-- Idiomas -->
+        <label for="Idioma">{{'Idioma'}}</label>
+        <br>
+            @foreach ($idiomaArray as $data)                                       
+                <input type="checkbox" name="nombre_idioma" id="nombre_idioma" value="{{ $data->id }}">{{ $data->nombre_idioma }}<br>                                                  
+            @endforeach
+        <label for="Dominio">{{'Dominio'}}</label>
+        <br>
+        <input type="radio" name="dominio_idioma" id="dominio_idioma" value="0">Alto<br>
+        <input type="radio" name="dominio_idioma" id="dominio_idioma" value="1">Medio<br>
+        <input type="radio" name="dominio_idioma" id="dominio_idioma" value="2">Bajo<br>
+        <br>
+        <select name="nombre_idioma" id="nombre_idioma">
+            @foreach ($idiomaArray as $data)                                       
+                <option value="{{ $data->id }}"  >{{ $data->nombre_idioma }}</option>                                                      
+             @endforeach
+
+        </select>
+        <br>
+        <!--<fieldset>  
         <input type="checkbox" name="" value="" onclick="return ValidatePetSelection();">Cats<br>  
         <input type="checkbox" name="" value="" onclick="return ValidatePetSelection();">Dogs<br>  
         <input type="checkbox" name="" value="" onclick="return ValidatePetSelection();">Birds<br>  
