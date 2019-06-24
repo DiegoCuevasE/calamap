@@ -2,7 +2,16 @@
 <html lang="es">
 <form action="{{ url('/moduloMype')}}" method="post" enctype="multipart/form-data">
    {{ csrf_field() }}
-        <h1>Agregar Mype</h1>
+   
+   <head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   </head>
+   
+   <body>
+       
+       
+   <h1>Agregar Mype</h1>
         
         <input type="hidden" name="user_id" id="user_id" value="1">        
         <br/>
@@ -11,13 +20,15 @@
         <br/>
         <label for="Razón Social">{{'Razón Social'}}</label>
         <select name="razon_social_mype" id="razon_social_mype">
+            <option>---Seleccione su razón social---</option>
             <option value="Gastronomía">Gastronomía</option>
-            <option value="Hotelería">Hoteleíra</option>
+            <option value="Hotelería">Hotelera</option>
             <option value="Turismo">Turismo</option>
             <option value="Bazares">Bazares</option>
             <option value="Artesanía">Artesanía</option>
         </select>
         <br/>
+
         <label for="Servicios">{{'Servicios'}}</label>
         <br>
             @foreach ($servicioArray as $data)                                       
@@ -51,7 +62,8 @@
             <option value="Sábado">Sabado</option>
             <option value="Domingo">Domingo</option>
         </select>
-        <label for=" de ">{{' de '}}</label>
+        <br>
+        <label for=" De ">{{' De '}}</label>
         <select name="h1" id="h1">
             <option value="00:00">00:00</option>
             <option value="00:30">00:30</option>
@@ -169,7 +181,7 @@
         <label for="Correo">{{'Correo'}}</label>
         <input type="email" name="correo_mype" id="correo_mype" value="">
         <br/>
-        <!-- Idiomas -->
+        <!-- Idiomas 
         <label for="Idioma">{{'Idioma'}}</label>
         <br>
             @foreach ($idiomaArray as $data)                                       
@@ -187,12 +199,7 @@
              @endforeach
 
         </select>
-        <br>
-        <!--<fieldset>  
-        <input type="checkbox" name="" value="" onclick="return ValidatePetSelection();">Cats<br>  
-        <input type="checkbox" name="" value="" onclick="return ValidatePetSelection();">Dogs<br>  
-        <input type="checkbox" name="" value="" onclick="return ValidatePetSelection();">Birds<br>  
-        <br>-->
+        -->
         </fieldset>
         <label for="Página(Opcional)">{{'Página(Opcional)'}}</label>
         <input type="url" name="pagina_mype" id="pagina_mype" value="">
@@ -210,9 +217,9 @@
         <br/>
         <input type="hidden" id="tipo_imagen_mype" name="tipo_imagen_mype" value="logo">
 
-
         <input type="submit" value="Agregar">
     </form>
+    </body> 
 </html>
 
 

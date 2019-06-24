@@ -47,6 +47,7 @@ Route::get('vistaSitio', function () {
 Route::resource('sitioTuristico','SitioturisticoController');
 //Mypes (habilitada todas las rutas)
 Route::resource('moduloMype', 'MypeController');
+
 //
 //Mypes (habilitada todas las rutas)
 Route::resource('pruebasServicio', 'ServicioController');
@@ -54,6 +55,13 @@ Route::resource('pruebasServicio', 'ServicioController');
 //Idiomas
 Route::get('/idiomas', 'IdiomaController@getIdiomas'); 
 //
+Route::get('/ajax-servicio', function(){
+    
+    
+    $tipo_servicio = Input::get('tipo_servicio');
+    $servicios = Servicio::where('tipo_servicio', '=', $tipo_servicio)->get();
+    return Response::json($servicios);
+});
 
 
 Auth::routes();

@@ -39,12 +39,7 @@ class MypeController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'idioma_id'=>'required|exist:idiomas,id',
-            'servicio_id'=>'required|exist:servicios,id',
-
-        ]);
-        return 'todo bien';
+      
         //$datosMypes=request()->all();
         
         $horario=request('d1').' a '.request('d2').' de '.request('h1').' hrs a '.request('h2').' hrs';
